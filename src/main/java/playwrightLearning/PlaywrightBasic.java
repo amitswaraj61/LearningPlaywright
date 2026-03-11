@@ -12,12 +12,12 @@ public class PlaywrightBasic {
 		Playwright pw = Playwright.create();
 		Browser browser = pw.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 		Page page = browser.newPage();
-		page.navigate("https://www.amazon.com");
+		page.navigate("https://academy.naveenautomationlabs.com/");
 		String title = page.title();
 		System.out.println(title);
 		String url = page.url();
 		System.out.println(url);
-		browser.close();
-		pw.close();
+//		browser.close();
+//		pw.close();
 	}
 }
